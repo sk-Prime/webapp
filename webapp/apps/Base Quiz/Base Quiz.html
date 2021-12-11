@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>
+   Base Quiz
+        </title>
+        <script src="baseui.js">
+        </script>
+        <style>
+            .page {
+                background-color    : #ddd;
+                color               : #445;
+                font-family         : monospace;
+                font-size           : 10pt;
+            }
+            .main {
+                display             : grid;
+                grid-template-rows  : auto;
+                row-gap             : 10px;
+                padding             : 10px;
+                width               : 90vw;
+                max-width           : 600px;
+                margin              : auto;
+            }
+            .title {
+                font-weight         : bold;
+                font-size           : 30pt;
+                border-bottom       : 1pt solid #ccd;
+                padding-bottom      : 5pt;
+                color               : #357;
+                text-align          : center;
+            }
+            .widget {
+                background-color    : #eee;
+                padding             : 10px;
+                box-shadow          : rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+            .subtitle {
+                font-size           : 12pt;
+                text-align          : center;
+            }
+            .entry {
+                font-size           : 10pt;
+                width               : 100%;
+                color               : #223;
+            }
+            .center {
+                display             : flex;
+                align-items         : center;
+                justify-content     : center;
+            }
+            .label {
+                font-size           : 20pt;
+                font-family         : monospace;
+                height              : 50px;
+                border-bottom       : 1px solid #ccd;
+            }
+            .control {
+                display             : grid;
+                grid-template-columns: 1fr 1fr;
+                gap                 : 10px;
+                padding             : 10px;
+            }
+        </style>
+    </head>
+    <body class="page">
+        <div class="main">
+            <div class="title">
+                Base Quiz
+            </div>
+            <div class="widget">
+                <div class="label" id="label">
+                    0x0
+                </div>
+                <div class="label" id="label_t">
+                </div>
+                <div class="label" id="label_b">
+                </div>
+                <div class="control">
+                    <button onclick="randomize()" type="button">
+                        Random
+                    </button>
+                    <button onclick="answer()" type="button">
+                        Answer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

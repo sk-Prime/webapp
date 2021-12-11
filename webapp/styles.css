@@ -1,0 +1,62 @@
+:root {
+    --blue:#334;
+    --grey: #eee;
+    --text-color:#5a5963;
+    --border:#ccd;
+  }
+body{
+    font-family: monospace;
+    max-width: 600px;
+    width: 95vw;
+    background-color:var(--grey);
+    display: grid;
+    grid-template-columns: auto;
+    margin:auto;
+}
+.page_title{
+    font-size: 50pt;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    font-weight: bolder;
+    color:var(--blue);
+    padding-bottom: 10px;
+}
+#button{
+    padding: 10px;
+    border:none;
+    text-align: right;
+    background-color: var(--grey);
+    color:var(--text-color);
+}
+
+.app_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.link{
+    display: grid;
+    grid-template-rows: 100px 20px;
+    text-decoration: none;
+    color:var(--text-color);
+    font-weight: bolder;
+    font-size: 10pt;
+    text-align: center;
+    padding: 10px;
+}
+.app_name{
+    border-top: 1px solid var(--border);
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.app_icon{
+    display: block;
+    margin: auto;
+    max-height: 90px;
+}
+.app_name_big{
+    font-size: 15pt;
+    margin: auto;
+    overflow-wrap: break-word;
+}

@@ -1,0 +1,81 @@
+:root{
+    --body-color: #f3f2f2;
+    --bottom-border: #ccd;
+    --font-color:#235;
+    --control-color:#f8f7f7;
+}
+body{
+    background-color: var(--body-color);
+    font-family: monospace;
+    color:var(--font-color);
+}
+.subbody{
+    width: 95vw;
+    margin: auto;
+    max-width: 600px;
+}
+
+.page-title{
+    font-size: 30pt;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 1px solid var(--bottom-border);
+}
+.guide{
+    text-align:center;
+    padding: 10px;
+}
+.svg-image{
+    padding: 20px;
+
+}
+
+#info{
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.control{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+button{
+    color: var(--font-color);
+    background-color: var(--control-color);
+    border: 1px solid var(--bottom-border);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 30px;
+    font-family: monospace;
+}
+button:hover{
+    background-color: snow;
+}
+button:active{
+    background-color:papayawhip;
+}
+
+#color-ind{
+    font-size: 6pt;
+
+}
+
+#popup{
+    display: grid;
+    gap:10px;
+    max-width: 300px;
+    margin: auto;
+    visibility: hidden;
+    grid-template-columns: repeat(12,1fr);
+}
+.color{
+    border: 1px solid #ccd;
+    height: 20px;
+}
